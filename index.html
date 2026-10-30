@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Roots Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Fresh Roots Market</a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#signup">Sign up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Fresh from the farm, every Saturday</h1>
+          <p>Fruit, vegetables, bread and herbs from small farms across the parish, sold by the people who grow them.</p>
+          <a class="btn" href="#signup">Join the mailing list</a>
+        </div>
+        <img class="hero-image" src="images/hero.svg" alt="" width="560" height="400">
+      </div>
+    </section>
+
+    <section id="about" class="features">
+      <div class="container">
+        <h2>Why shop with us</h2>
+        <div class="feature-list">
+          <article class="feature">
+            <img src="images/icon-local.svg" alt="" width="64" height="64">
+            <h3>Grown nearby</h3>
+            <p>Everything on sale is grown or made within 50 km of the market, so it reaches you within a day of being picked.</p>
+          </article>
+          <article class="feature">
+            <img src="images/icon-season.svg" alt="" width="64" height="64">
+            <h3>In season</h3>
+            <p>What you find changes through the year: mangoes in summer, sorrel at Christmas, and greens almost every week.</p>
+          </article>
+          <article class="feature">
+            <img src="images/icon-farmer.svg" alt="" width="64" height="64">
+            <h3>Meet the growers</h3>
+            <p>Ask the farmers how they grow their food and how to cook it. Most stalls are run by the families who farm the land.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="container">
+        <div class="visit-details">
+          <h2>Visit the market</h2>
+          <p>We set up in the community centre car park, with covered stalls when it rains.</p>
+          <table class="hours">
+            <caption>Opening hours</caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Saturday</td>
+                <td>7:00 am – 1:00 pm</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>8:00 am – 12:00 pm</td>
+              </tr>
+              <tr>
+                <td>Public holidays</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <blockquote class="testimonial">
+          <p>“I come every Saturday for the callaloo and the hard dough bread. The prices are fair and everything tastes like it was picked that morning.”</p>
+          <footer>— Andrea, a regular since 2022</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="signup" class="signup">
+      <div class="container">
+        <h2>Join the mailing list</h2>
+        <p>Find out what's in season before you get to the market.</p>
+
+        <form id="signup-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+            <p class="error" id="name-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="error" id="email-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="frequency">How often should we email you?</label>
+            <select id="frequency" name="frequency" required aria-describedby="frequency-error">
+              <option value="">Choose one</option>
+              <option value="weekly">Every week</option>
+              <option value="monthly">Once a month</option>
+            </select>
+            <p class="error" id="frequency-error"></p>
+          </div>
+
+          <button type="submit" class="btn">Sign up</button>
+        </form>
+
+        <p id="form-message" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Copyright &copy; 2026, Fresh Roots Market</p>
+      <p>A COMP2245 project by Your Name</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400">
+  <rect width="560" height="400" rx="24" fill="#FEFCBF"/>
+  <circle cx="440" cy="90" r="46" fill="#F6AD55"/>
+  <path d="M0 250 C 120 170, 240 200, 330 230 S 500 190, 560 210 V 376 a24 24 0 0 1 -24 24 H 24 a24 24 0 0 1 -24 -24 Z" fill="#9AE6B4"/>
+  <path d="M0 300 C 140 250, 300 280, 560 260 V 376 a24 24 0 0 1 -24 24 H 24 a24 24 0 0 1 -24 -24 Z" fill="#68D391"/>
+  <!-- stall posts -->
+  <rect x="150" y="150" width="12" height="190" fill="#744210"/>
+  <rect x="398" y="150" width="12" height="190" fill="#744210"/>
+  <!-- awning -->
+  <path d="M130 120 H430 L420 165 H140 Z" fill="#FFFFFF"/>
+  <path d="M130 120 H180 L174 165 H140 Z M230 120 H280 L278 165 H226 Z M330 120 H380 L382 165 H330 Z" fill="#C53030"/>
+  <path d="M140 165 q 16.5 22 33 0 q 16.5 22 33 0 q 16.5 22 33 0 q 16.5 22 33 0 q 16.5 22 33 0 q 16.5 22 33 0 q 16.5 22 33 0 q 16.5 22 33 0 Z" fill="#C53030"/>
+  <!-- counter -->
+  <rect x="140" y="260" width="280" height="22" rx="4" fill="#975A16"/>
+  <rect x="150" y="282" width="260" height="60" fill="#B7791F"/>
+  <!-- produce -->
+  <circle cx="190" cy="246" r="16" fill="#E53E3E"/>
+  <circle cx="218" cy="248" r="14" fill="#DD6B20"/>
+  <circle cx="204" cy="232" r="13" fill="#ED8936"/>
+  <ellipse cx="270" cy="246" rx="26" ry="15" fill="#38A169"/>
+  <ellipse cx="300" cy="240" rx="22" ry="13" fill="#2F855A"/>
+  <path d="M340 260 q 10 -40 30 -40 q 20 0 30 40 Z" fill="#ECC94B"/>
+  <path d="M370 220 l -6 -14 M370 220 l 6 -14" stroke="#2F855A" stroke-width="4" stroke-linecap="round"/>
+</svg>
