@@ -1,2 +1,425 @@
 /* Project 1: write all of your styles in this file.
    Follow the layout, font and colour guide in the project brief. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1A202C;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: "Fraunces", Georgia, serif;
+    color: #22543D;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+
+/* Green button look for the link and the Sign up button */
+
+.btn {
+    display: inline-block;
+    background-color: #2F855A;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+
+
+/* Darker green on hover */
+
+.btn:hover {
+    background-color: #276749;
+}
+
+
+/* Grey line under the header */
+
+.site-header {
+    padding: 16px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+
+/* Logo on the left, navigation on the right */
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Links in a row with no bullets */
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #2D3748;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Green link on hover */
+
+.nav-links a:hover {
+    color: #2F855A;
+}
+
+
+/* Underline comes back on hover */
+
+.logo:hover,
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #F0FFF4;
+}
+
+
+/* Two equal columns, centred vertically */
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.hero h1 {
+    margin-top: 0;
+}
+
+
+/* Bigger paragraph with space before the button */
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+
+/* Removes the small gap under the image */
+
+.hero-image {
+    display: block;
+}
+
+
+/* Centred heading with space below */
+
+.features h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+
+/* Three equal columns */
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+
+/* Card look */
+
+.feature {
+    background-color: #F7FAFC;
+    padding: 32px;
+    border-radius: 12px;
+}
+
+
+/* Icon shown at 64px */
+
+.feature img {
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+
+/* Even spacing inside the card */
+
+.feature h3 {
+    margin: 16px 0 8px;
+}
+
+.feature p {
+    margin: 0;
+}
+
+.visit {
+    background-color: #F0FFF4;
+}
+
+
+/* Two equal columns, centred vertically */
+
+.visit .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.visit-details h2 {
+    margin-top: 0;
+}
+
+
+/* Full-width table with joined borders */
+
+.hours {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Left-align the caption and cells */
+
+.hours caption,
+.hours th,
+.hours td {
+    text-align: left;
+}
+
+.hours caption {
+    font-weight: bold;
+}
+
+
+/* Cell padding and light-green line */
+
+.hours th,
+.hours td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #C6F6D5;
+}
+
+
+/* Green header row */
+
+.hours th {
+    background-color: #2F855A;
+    color: #FFFFFF;
+}
+
+
+/* Quote box with green left border and right-only rounding */
+
+.testimonial {
+    margin: 0;
+    padding: 32px;
+    background-color: #FFFFFF;
+    border-left: 6px solid #2F855A;
+    border-radius: 0 12px 12px 0;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.testimonial p {
+    margin-top: 0;
+}
+
+
+/* Smaller grey name that is not italic */
+
+.testimonial footer {
+    font-style: normal;
+    font-size: 16px;
+    color: #4A5568;
+}
+
+
+/* Centred heading and intro paragraph */
+
+.signup h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.signup .container>p {
+    text-align: center;
+}
+
+
+/* Form is 520px wide and centred */
+
+#signup-form {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/* Each label on its own line */
+
+#signup-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Full-width fields that use the page font */
+
+#signup-form input,
+#signup-form select {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #A0AEC0;
+    border-radius: 8px;
+    font: inherit;
+}
+
+
+/* Red error text with reserved space so the form doesn't jump */
+
+.error {
+    min-height: 24px;
+    margin: 4px 0 8px;
+    font-size: 15px;
+    color: #C53030;
+}
+
+
+/* Red border when JavaScript marks a field invalid */
+
+#signup-form [aria-invalid="true"] {
+    border: 2px solid #C53030;
+}
+
+
+/* Full-width Sign up button */
+
+#signup-form .btn {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Thank-you message look, added by the "success" class */
+
+#form-message.success {
+    max-width: 520px;
+    margin: 24px auto 0;
+    padding: 16px;
+    background-color: #C6F6D5;
+    color: #22543D;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.site-footer {
+    padding: 32px 0;
+    background-color: #22543D;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+
+/* Copyright on the left, name on the right */
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    /* Smaller headings */
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    /* Less section padding */
+    section {
+        padding: 48px 0;
+    }
+    /* Stack the header and footer */
+    .site-header .container,
+    .site-footer .container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    /* Centre the stacked header */
+    .site-header .container {
+        align-items: center;
+    }
+    /* Single column layouts */
+    .hero .container,
+    .feature-list,
+    .visit .container {
+        grid-template-columns: 1fr;
+    }
+}
